@@ -39,7 +39,6 @@ function StocksChange() {
   }
 
   const prices = stocksQuery.data as StockPerformance[];
-  console.log("prices ", prices);
 
   // Verifica se prices è definito prima di accedervi
   if (!prices || prices.length === 0) {

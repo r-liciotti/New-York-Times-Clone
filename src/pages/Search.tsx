@@ -24,8 +24,9 @@ function Search() {
   });
 
   if (searchQuery.isPending) return <Spinner />;
-  if (searchQuery.isError)
+  if (searchQuery.isError) {
     <Error isError={true} error={searchQuery.error as AxiosError} />;
+  }
   console.log("searchQuery.data ", searchQuery.data);
 
   const meta = searchQuery.data?.data.response.meta as ArticleSearchMeta;

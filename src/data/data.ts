@@ -1,3 +1,5 @@
+import { encodeString } from "../helper/encodeString";
+
 type SectionItem = {
     label: string;
     param: string;
@@ -14,8 +16,9 @@ const mainSection: SectionItem[] = [
 ];
 
 function getSectionLabelByParam(param: string): string | undefined {
+    console.log("param ", encodeString(param));
 
-    return mainSection.find(section => section.param === param)?.label;
+    return sections.find(section => section.param === encodeString(param))?.displayName;
 
 }
 
@@ -39,9 +42,9 @@ function getSectionItemList(param: string): SectionItem[] {
 }
 
 const sectionItem_US: SectionItem[] = [
-    { label: "U.S.", param: "us", section: "us" },
+    { label: "U.S.", param: "u.s.", section: "us" },
     { label: "Politics", param: "politics", section: "politics" },
-    { label: "New York", param: "nyregion", section: "nyregion" },
+    { label: "New York", param: "new%20york", section: "nyregion" },
     // { label: "California", param: "california-today", section: "column/california-today" },
     { label: "Education", param: "education", section: "education" },
     { label: "Health", param: "health", section: "health" },
@@ -50,7 +53,7 @@ const sectionItem_US: SectionItem[] = [
     { label: "Climate", param: "climate", section: "climate" },
     { label: "Business", param: "business", section: "business" },
     { label: "Tech", param: "technology", section: "technology" },
-    { label: "The Upshot", param: "upshot", section: "upshot" },
+    { label: "The Upshot", param: "the%20upshot", section: "upshot" },
     { label: "The Magazine", param: "magazine", section: "magazine" }
 ];
 
@@ -74,9 +77,9 @@ const sectionItem_Business: SectionItem[] = [
     // { label: "Media", param: "media", section: "business/media" },
     // { label: "Finance and Markets", param: "markets-overview", section: "markets-overview" },
     // { label: "DealBook", param: "dealbook", section: "business/dealbook" },
-    { label: "Personal Tech", param: "personaltech", section: "technology" },
+    // { label: "Personal Tech", param: "personaltech", section: "technology" },
     // { label: "Energy Transition", param: "business", section: "energy-environment" },
-    { label: "Your Money", param: "your money", section: "your-money" },
+    { label: "Your Money", param: "your%20money", section: "your-money" },
 ];
 const sectionItem_Arts: SectionItem[] = [
     { label: "Today's Arts", param: "arts", section: "arts" },
@@ -88,7 +91,7 @@ const sectionItem_Arts: SectionItem[] = [
     // { label: "Television", param: "television", section: "arts/television" },
     { label: "Theater", param: "theater", section: "theater" },
     // { label: "Pop Culture", param: "pop-culture", section: "spotlight/pop-culture" },
-    { label: "T Magazine", param: "t-magazine", section: "t-magazine" },
+    { label: "T Magazine", param: "t magazine", section: "t-magazine" },
     // { label: "Visual Arts", param: "design", section: "arts/design" }
 ];
 
@@ -145,40 +148,39 @@ const sections: Section[] = [
     { section: "guide", displayName: "Guide", param: "guide" },
     { section: "health", displayName: "Health", param: "health" },
     { section: "home & garden", displayName: "Home & Garden", param: "home%20%26%20garden" },
-    { section: "home page", displayName: "Home Page", param: "home%20%page" },
-    { section: "job market", displayName: "Job Market", param: "job%20%market" },
-    { section: "the learning network", displayName: "The Learning Network", param: "the%20%learning%20%network" },
+    { section: "home page", displayName: "Home Page", param: "home%20page" },
+    { section: "job market", displayName: "Job Market", param: "job%20market" },
+    { section: "the learning network", displayName: "The Learning Network", param: "the%20learning%20network" },
     { section: "lens", displayName: "Lens", param: "lens" },
     { section: "magazine", displayName: "Magazine", param: "magazine" },
     { section: "movies", displayName: "Movies", param: "movies" },
-    // { section: "multimedia/photos", displayName: "Multimedia/Photos", param: "multimedia/photos" },
-    { section: "new york", displayName: "New York", param: "new%20%ork" },
+    { section: "new york", displayName: "New York", param: "new%20york" },
     { section: "obituaries", displayName: "Obituaries", param: "obituaries" },
     { section: "opinion", displayName: "Opinion", param: "opinion" },
     { section: "parenting", displayName: "Parenting", param: "parenting" },
     { section: "podcasts", displayName: "Podcasts", param: "podcasts" },
-    { section: "reader center", displayName: "Reader Center", param: "reader%20%center" },
-    { section: "real estate", displayName: "Real Estate", param: "real estate" },
-    { section: "smarter living", displayName: "Smarter Living", param: "smarter%20%living" },
+    { section: "reader center", displayName: "Reader Center", param: "reader%20center" },
+    { section: "real estate", displayName: "Real Estate", param: "real%20estate" },
+    { section: "smarter living", displayName: "Smarter Living", param: "smarter%20living" },
     { section: "science", displayName: "Science", param: "science" },
     { section: "sports", displayName: "Sports", param: "sports" },
     { section: "style", displayName: "Style", param: "style" },
-    { section: "sunday review", displayName: "Sunday Review", param: "sunday%20%review" },
-    { section: "t brand", displayName: "T Brand", param: "t%20%brand" },
-    { section: "t magazine", displayName: "T Magazine", param: "t%20%magazine" },
+    { section: "sunday review", displayName: "Sunday Review", param: "sunday%20review" },
+    { section: "t brand", displayName: "T Brand", param: "t%20brand" },
+    { section: "t magazine", displayName: "T Magazine", param: "t%20magazine" },
     { section: "technology", displayName: "Technology", param: "technology" },
     { section: "theater", displayName: "Theater", param: "theater" },
-    { section: "times insider", displayName: "Times Insider", param: "times%20%insider" },
+    { section: "times insider", displayName: "Times Insider", param: "times%20insider" },
     { section: "today’s paper", displayName: "Today’s Paper", param: "today%E2%80%99s%20paper" },
     { section: "travel", displayName: "Travel", param: "travel" },
     { section: "u.s.", displayName: "U.S.", param: "u.s." },
     { section: "universal", displayName: "Universal", param: "universal" },
-    { section: "the upshot", displayName: "The Upshot", param: "the%20%upshot" },
+    { section: "the upshot", displayName: "The Upshot", param: "the%20upshot" },
     { section: "video", displayName: "Video", param: "video" },
-    { section: "the weekly", displayName: "The Weekly", param: "the%20%weekly" },
+    { section: "the weekly", displayName: "The Weekly", param: "the%20weekly" },
     { section: "well", displayName: "Well", param: "well" },
     { section: "world", displayName: "World", param: "world" },
-    { section: "your money", displayName: "Your Money", param: "your%20%money" }
+    { section: "your money", displayName: "Your Money", param: "your%20money" }
 ];
 
 interface IndiciBorsa {

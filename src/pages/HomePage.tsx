@@ -17,9 +17,9 @@ function Homepage() {
   if (homePageQuery.isLoading) {
     return <Spinner />;
   }
-  if (homePageQuery.isError)
+  if (homePageQuery.isError) {
     return <Error isError={true} error={homePageQuery.error as AxiosError} />;
-
+  }
   const results = homePageQuery?.data?.data.results as TopStoriesArticle[];
 
   // Controlla se il secondo query è in caricamento o ha errori

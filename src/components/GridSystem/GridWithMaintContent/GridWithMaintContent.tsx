@@ -11,6 +11,9 @@ interface GridWithMainContentProps {
 const GridWithMainContent: React.FC<GridWithMainContentProps> = ({
   MainContent,
 }) => {
+  if (!MainContent || MainContent.length === 0) {
+    return <></>;
+  }
   return (
     <div className={style.gridWithMainContent}>
       <div className={style.gridMainContent}>

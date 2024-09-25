@@ -21,9 +21,9 @@ function Section() {
 
   if (sectionQuery.isPending) return <Spinner />;
 
-  if (sectionQuery.isError)
-    <Error isError={true} error={sectionQuery.error as AxiosError} />;
-
+  if (sectionQuery.isError) {
+    return <Error isError={true} error={sectionQuery.error as AxiosError} />; // Aggiunte parentesi per il return dell'errore
+  }
   const results = sectionQuery?.data?.data.results as TopStoriesArticle[];
 
   return (
