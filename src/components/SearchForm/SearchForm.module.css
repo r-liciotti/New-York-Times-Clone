@@ -1,0 +1,75 @@
+.searchFormContainer {
+    background-color: var(--bg-light-b3);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.searchFormContainer .searchForm {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.searchFormContainer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+
+.searchFormContainer .inputContainer {
+    justify-content: space-between;
+
+}
+
+.searchFormContainer div input {
+    background-color: transparent;
+    border-bottom: 1px solid grey;
+    width: 85%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: var(--ff-nyt-secondary);
+}
+
+.searchFormContainer div select {
+    background-color: transparent;
+    color: var(--clr-light-c2);
+}
+
+
+.searcIcon {
+    width: 30px;
+    background-color: transparent;
+    margin-left: 10px;
+}
+
+.searcIcon svg {
+    fill: none;
+    stroke: none;
+}
+
+.searcIcon svg path {
+    fill: var(--clr-light-c2);
+}
+
+@media (max-width: 768px) {
+    .searchFormContainer .inputContainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .searchFormContainer .inputContainer input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+}

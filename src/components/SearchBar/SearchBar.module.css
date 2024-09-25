@@ -1,0 +1,37 @@
+.searchBarContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.searchIcon {
+    display: inline-block;
+    height: 35px;
+    vertical-align: sub;
+    width: 35px;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+.searchIcon:hover {
+    background-color: var(--bg-light-b2);
+}
+
+input {
+    margin-left: 5px;
+    width: 200px;
+    height: 35px;
+    padding: 5px;
+    font-size: 14px;
+
+}
+
+.buttonSearch {
+    background-color: rgb(115, 171, 211);
+    border: 1px solid rgb(50, 104, 145);
+    padding: 3px;
+    border-radius: 3px;
+    margin-left: 5px;
+    height: 35px;
+    width: 35px;
+
+}

@@ -1,0 +1,47 @@
+.mainArticleInGrid {
+    grid-area: main_article;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #dbdbdb;
+    padding-right: 10px;
+}
+
+.mainArticleInGrid img {
+    width: 100%;
+}
+
+.mainArticleInGrid span {
+    text-align: right;
+    font-size: 11px;
+    font-family: var(--ff-nyt-secondary);
+    color: var(--clr-light-c2);
+}
+
+.mainArticleInGrid .testo {
+    text-align: left;
+    margin-top: 5px;
+
+}
+
+.mainArticleInGrid .testo :nth-child(1) {
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+.mainArticleInGrid .testo :nth-child(2) {
+    font-size: 14px;
+    color: var(--clr-light-c2);
+}
+
+.mainArticleInGrid .testo :nth-child(3) {
+    font-size: 12px;
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .mainArticleInGrid {
+        border-right: 0px solid #dbdbdb;
+        padding-right: 0px;
+        border-bottom: 1px solid var(--clr-light-c3);
+    }
+}

@@ -1,0 +1,37 @@
+.GridWithMainContentAndSideBar {
+    display: grid;
+    grid-column-gap: calc(1rem* 2 + 1px);
+    grid-template-columns: repeat(20, 1fr);
+    margin-top: 20px;
+}
+
+.GridWithMainContentAndSideBar .gridMainContent {
+    min-width: 0;
+    position: relative;
+    grid-column: span 14;
+    border-right: 1px solid var(--clr-light-c2);
+    padding-right: 35px;
+}
+
+.GridWithMainContentAndSideBar .gridSidebarContent {
+    min-width: 0;
+    position: relative;
+    grid-column: span 6;
+}
+
+@media (max-width: 768px) {
+    .GridWithMainContentAndSideBar {
+        display: grid;
+        grid-column-gap: 0;
+        grid-template-columns: repeat(20, 1fr);
+        margin-top: 20px;
+    }
+
+    .GridWithMainContentAndSideBar .gridMainContent {
+
+        grid-column: span 20;
+        border-right: 0px solid var(--clr-light-c2);
+        padding: 0px 15px;
+    }
+
+}

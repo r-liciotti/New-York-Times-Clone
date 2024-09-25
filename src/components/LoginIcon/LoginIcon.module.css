@@ -1,0 +1,15 @@
+.loginIcon {
+    width: 28px;
+    fill: var(--clr-light-c2);
+}
+
+.loginIcon:hover {
+    fill: var(--clr-light-c1);
+}
+
+@media (max-width: 768px) {
+    .loginIcon {
+        fill: var(--clr-light-c1);
+    }
+
+}

@@ -1,0 +1,15 @@
+.closeIconContainer {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    width: 40px;
+}
+
+.closeIcon {
+    width: inherit;
+    fill: var(--clr-light-c2);
+}
+
+.closeIcon:hover {
+    fill: var(--clr-light-c1);
+}

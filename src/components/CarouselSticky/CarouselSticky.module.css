@@ -1,0 +1,86 @@
+.carouselSlide {
+    padding: 10px;
+}
+
+.carouselFirstRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+.carouselSecondRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+
+.singleColumn {
+    width: 100%;
+}
+
+.carouselFirstRow .carouselColumn {
+    width: 100%;
+}
+
+.carouselColumn {
+    width: 48%;
+    /* Due colonne con margini */
+    display: flex;
+    flex-direction: column;
+}
+
+.carouselColumn img {
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+}
+
+/* Sovrascrivo stile <ArticlePreview> */
+.carouselFirstRow .carouselColumn div a {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.carouselFirstRow .carouselColumn div a div {
+    width: 100%;
+}
+
+/* END Sovrascrivo stile <ArticlePreview> */
+
+.button_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    height: 35px;
+}
+
+.button_wrapper button {
+    background: white;
+    margin: 10px 4px 0 4px;
+}
+
+
+button svg {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+    fill: #FFFFFF;
+    stroke: #121212;
+}
+
+button svg circle {
+    stroke: #DFDFDF;
+}
+
+.rotate {
+    webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}

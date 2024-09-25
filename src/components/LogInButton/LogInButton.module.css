@@ -1,0 +1,18 @@
+.logInButton {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 4px 6px;
+
+    background-color: rgb(86, 123, 149);
+    border: 1px solid rgb(50, 104, 145);
+
+}
+
+.logInButton a {
+    color: rgb(255, 255, 255) !important;
+    font-weight: 600;
+}

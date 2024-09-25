@@ -1,0 +1,41 @@
+.mobileFooterContainer {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--ff-nyt-secondary);
+    font-size: 14px;
+    padding: 15px;
+}
+
+.logoFooter {
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+.desktopFooterContainer .separatorOneLine {
+    border-bottom: 1px solid var(--clr-light-c3);
+    margin: 2px 0;
+}
+
+.footerCopyrights {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 11px;
+    color: var(--clr-light-c2);
+    margin: 10px 0;
+}
+
+.footerCopyrights p a {
+    margin-left: 2px;
+    font-weight: 700;
+}
+
+.footerCopyrights p a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.sectionListMobileContainer :last-child {
+    border: 0px;
+}

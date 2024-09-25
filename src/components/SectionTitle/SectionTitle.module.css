@@ -1,0 +1,14 @@
+.sectionTitle {
+    font-size: 35px;
+    font-weight: 600;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--clr-light-c2);
+}
+
+@media (max-width: 768px) {
+    .sectionTitle {
+        grid-column-gap: 0;
+        padding: 15px;
+    }
+
+}

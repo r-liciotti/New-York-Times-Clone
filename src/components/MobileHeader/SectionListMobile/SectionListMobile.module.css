@@ -1,0 +1,74 @@
+.sectionListMobileContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mainSectionContainer {
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--clr-light-c3);
+}
+
+.mainSectionLabel {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--clr-light-c1);
+}
+
+
+.subSectionContainer {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    padding: 5px;
+
+}
+
+.open {
+    display: flex;
+}
+
+.subSectionContainer>div {
+    position: static;
+}
+
+
+.columnContainer {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.columnContainer .column:nth-child(2) {
+    padding-left: 40px;
+}
+
+.twoColumns {
+    flex-direction: column;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.columnContainer a {
+    width: auto;
+    padding-bottom: 1px;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.columnContainer a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.sectionlabel {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 10px 0;
+}

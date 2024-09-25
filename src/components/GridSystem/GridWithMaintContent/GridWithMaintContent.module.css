@@ -1,0 +1,21 @@
+.gridWithMainContent {
+    display: grid;
+    grid-column-gap: calc(1rem* 2 + 1px);
+    grid-template-columns: repeat(20, 1fr);
+    margin-top: 20px;
+}
+
+.gridWithMainContent .gridMainContent {
+    min-width: 0;
+    position: relative;
+    grid-column: span 20;
+}
+
+
+@media (max-width: 768px) {
+    .gridWithMainContent {
+        grid-column-gap: 0;
+        padding: 0 15px;
+    }
+
+}

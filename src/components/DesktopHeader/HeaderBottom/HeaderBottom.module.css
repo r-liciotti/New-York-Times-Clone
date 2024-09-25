@@ -1,0 +1,28 @@
+.header_bottom {
+    grid-area: 3 / 1 / 4 / 2;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    font-size: 15px;
+}
+
+.sectionLink {
+    font-family: var(--ff-nyt-secondary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dropdown_icon {
+    width: 10px;
+    margin-left: 5px;
+    color: black;
+}
+
+.sectionLink div:hover {
+    border-bottom: 2px solid black;
+}

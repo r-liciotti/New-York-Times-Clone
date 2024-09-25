@@ -1,0 +1,54 @@
+.footerSectionList {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.footerSectionContainer {
+    margin-bottom: 20px;
+    padding-right: 100px;
+}
+
+.columnContainer {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.columnContainer .column:nth-child(2) {
+    padding-left: 40px;
+}
+
+.twoColumns {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.columnContainer a {
+    width: auto;
+    padding-bottom: 1px;
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+
+.columnContainer a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.sectionTitle {
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: var(--clr-light-c1);
+    margin-bottom: 10px;
+}

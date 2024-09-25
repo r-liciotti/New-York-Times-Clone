@@ -1,0 +1,79 @@
+.articlePreview {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.articlePreview a {
+    display: inherit;
+}
+
+.articlePreview .testo {
+    width: 40%;
+    padding-right: 15px;
+}
+
+/* Titolo Articolo */
+.articlePreview div.testo :nth-child(1) {
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+/* Abstract Articolo */
+.articlePreview div.testo :nth-child(2) {
+    color: var(--clr-light-c2);
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+/* Autore Articolo */
+.articlePreview div.testo :nth-child(3) {
+    font-size: 11px;
+    font-family: var(--ff-nyt-secondary);
+
+}
+
+
+.articlePreview div.immagine {
+    width: 50%;
+}
+
+.articlePreview div.immagine img {
+    width: 100%;
+}
+
+
+.spearatorOneLine {
+    width: 100% !important;
+    /* margin-top: 20px; */
+}
+
+.immagine span {
+    display: block;
+    font-size: 13px;
+    text-align: right;
+    color: var(--clr-light-c2);
+}
+
+@media (max-width: 739px) {
+    .articlePreview {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .articlePreview .testo {
+        width: 100%;
+        padding-right: 0px;
+        padding-bottom: 15px;
+    }
+
+    .articlePreview div.immagine {
+        width: 100%;
+    }
+
+}

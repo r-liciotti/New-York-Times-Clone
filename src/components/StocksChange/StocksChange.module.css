@@ -1,0 +1,24 @@
+.stockChange {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.positive {
+    color: green;
+}
+
+.negative {
+    color: red;
+}
+
+.stockChange span {
+    margin-left: 3px;
+}
+
+.stockChange span svg {
+    margin-left: 3px;
+}
+
+.negativeArrow {
+    transform: rotate(180deg);
+}

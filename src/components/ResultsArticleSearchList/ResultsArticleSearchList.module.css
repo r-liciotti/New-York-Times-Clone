@@ -1,0 +1,11 @@
+.resultsArticleSearchContainer {
+    width: 70%;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .resultsArticleSearchContainer {
+        width: 100%;
+        padding: 0 15px;
+    }
+}

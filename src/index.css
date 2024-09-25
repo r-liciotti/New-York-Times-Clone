@@ -1,0 +1,117 @@
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: var(--bg-light-b1);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: var(--ff-nyt-secondary);
+}
+
+.container-desktop {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  margin: 0 auto;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--ff-title);
+}
+
+p {
+  font-family: var(--ff-nyt-secondary);
+  color: var(--clr-light-c2);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* Max For Tablet */
+@media (max-width: 768px) {
+  .container-desktop {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    /* padding: 0 15px; */
+  }
+}
+
+/* Max For Laptop */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container-desktop {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* VARIABLES */
+:root {
+  /* Backgorund Color */
+  --bg-light-b1: WHITE;
+  --bg-light-b2: rgb(247, 247, 247);
+  --bg-light-b3: #f7f7f7;
+
+
+  /* Fonts color */
+  /* BLACK */
+  --clr-light-c1: black;
+  --clr-light-c2: #5A5A5A;
+  --clr-light-c3: #e2e2e2;
+
+
+  /* WHITE */
+
+
+  /* FONTS */
+  --ff-nyt-hero: "Chomsky", Georgia, serif;
+  --ff-nyt-secondary: "Franklin", Georgia, serif;
+  --ff-title: "CheltenhamBold", Georgia, serif;
+  --ff-detail: "FranklinBook", sans-serif;
+}
+
+
+@font-face {
+  font-family: "Chomsky";
+  src: url("@fonts/Chomsky-8MOa2.otf") format("otf");
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "CheltenhamBold";
+  src: url("@fonts/Cheltenham/Cheltenham.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Franklin";
+  src: url("@fonts/Franklin/LibreFranklin.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FranklinBook";
+  src: url("@fonts/Franklin/FranklinBook2.woff2") format("woff2"),
+    url("@fonts/Franklin/FranklinBook.woff") format("woff");
+
+  font-display: swap;
+}

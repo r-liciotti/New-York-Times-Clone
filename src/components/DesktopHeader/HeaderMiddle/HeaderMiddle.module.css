@@ -1,0 +1,26 @@
+.header_middle {
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 12px;
+
+}
+
+
+.date_container {
+    text-align: left;
+    width: 25%;
+
+}
+
+.title_container {
+    text-align: center;
+    width: 45%;
+}
+
+.stocks_container {
+    text-align: right;
+    width: 20%;
+}

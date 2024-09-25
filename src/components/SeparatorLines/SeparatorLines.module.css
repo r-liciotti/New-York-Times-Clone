@@ -1,0 +1,15 @@
+.separatorLines {
+    border-bottom: 1px solid black;
+    margin-bottom: 2px;
+}
+
+.separatorOneLine {
+    border-bottom: 1px solid black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.separatorOneLineVertical {
+    border-right: 1px solid black;
+    margin-right: 2px;
+}

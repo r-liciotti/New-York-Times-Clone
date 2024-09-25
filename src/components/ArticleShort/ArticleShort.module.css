@@ -1,0 +1,45 @@
+.articleShort {
+    padding: 15px 0 15px 0;
+    border-bottom: 1px solid grey;
+
+}
+
+.articleShort a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.articleShort a .testo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+
+.articleShort a img {
+    width: 20%;
+}
+
+.rounded_100 {
+    border-radius: 100%;
+}
+
+.withoutPhotographer span {
+    display: none;
+}
+
+.articleShort a h5 {
+    font-size: 15px;
+    font-family: var(--ff-title);
+}
+
+.authors {
+    font-size: 12px;
+    color: var(--clr-light-c2);
+    font-weight: 600;
+    text-transform: uppercase;
+}
