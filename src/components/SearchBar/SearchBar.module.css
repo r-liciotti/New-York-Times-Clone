@@ -22,7 +22,6 @@ input {
     height: 35px;
     padding: 5px;
     font-size: 14px;
-
 }
 
 .buttonSearch {
@@ -34,4 +33,14 @@ input {
     height: 35px;
     width: 35px;
 
+}
+
+@media (max-width: 768px) {
+    input {
+        margin-left: 0px;
+        width: 100%;
+        border: 1px solid var(--clr-light-c2);
+        border-radius: 3px;
+        margin-bottom: 20px;
+    }
 }
