@@ -82,26 +82,26 @@ Ecco alcune immagini del progetto:
 ### Homepage
 
 <img src="./public/screenshot/HomePage.jpeg" alt="Homepage" width="400"/>
-<img src="./public/screenshot/HomePage_Mobile.jpeg" alt="Homepage Mobile" width="400"/>
+<img src="./public/screenshot/HomePage_Mobile.jpeg" alt="Homepage Mobile" width="200"/>
 
-### Navbar
+### Navbar (solo Mobile)
 
-<img src="./public/screenshot/Navbar_Mobile.jpeg" alt="Navbar Mobile" width="400"/>
+<img src="./public/screenshot/Navbar_Mobile.jpeg" alt="Navbar Mobile" width="200"/>
 
 ### Search Page
 
 <img src="./public/screenshot/SearchPage.jpeg" alt="Search Page" width="400"/>
-<img src="./public/screenshot/SearchPage_Mobile.jpeg" alt="Search Page Mobile" width="400"/>
+<img src="./public/screenshot/SearchPage_Mobile.jpeg" alt="Search Page Mobile" width="200"/>
 
 ### Section Page
 
 <img src="./public/screenshot/SectionPage.jpeg" alt="Section Page" width="400"/>
-<img src="./public/screenshot/SectionPage_Mobile.jpeg" alt="Section Page Mobile" width="400"/>
+<img src="./public/screenshot/SectionPage_Mobile.jpeg" alt="Section Page Mobile" width="200"/>
 
 ### Logo
 
 <img src="./public/screenshot/The_Clone_York_Times_Logo.png" alt="The Clone York Times Logo" width="400"/>
-<img src="./public/screenshot/The_New_York_Times_logo.png" alt="The New York Times Logo" width="400"/>
+<img src="./public/screenshot/The_New_York_Times_logo.png" alt="The New York Times Logo" width="200"/>
 
 
 ## Dipendenze
