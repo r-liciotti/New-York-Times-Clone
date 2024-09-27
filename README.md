@@ -77,33 +77,32 @@ Ecco una panoramica della struttura delle cartelle e dei file principali:
 
 ## Screenshot
 Ecco alcune immagini del progetto:
+## Screenshot
+
 ### Homepage
 
-![Homepage](./public/screenshot/HomePage.jpeg)
-![Homepage Mobile](./path/HomePage_Mobile.jpeg)
+<img src="./public/screenshot/HomePage.jpeg" alt="Homepage" width="400"/>
+<img src="./public/screenshot/HomePage_Mobile.jpeg" alt="Homepage Mobile" width="400"/>
 
 ### Navbar
 
-![Navbar Mobile](./public/screenshot/Navbar_Mobile.jpeg)
+<img src="./public/screenshot/Navbar_Mobile.jpeg" alt="Navbar Mobile" width="400"/>
 
 ### Search Page
 
-![Search Page](./public/screenshot/SearchPage.jpeg)
-![Search Page Mobile](./public/screenshot/SearchPage_Mobile.jpeg)
+<img src="./public/screenshot/SearchPage.jpeg" alt="Search Page" width="400"/>
+<img src="./public/screenshot/SearchPage_Mobile.jpeg" alt="Search Page Mobile" width="400"/>
 
 ### Section Page
 
-![Section Page](./public/screenshot/SectionPage.jpeg)
-![Section Page Mobile](./public/screenshot/SectionPage_Mobile.jpeg)
+<img src="./public/screenshot/SectionPage.jpeg" alt="Section Page" width="400"/>
+<img src="./public/screenshot/SectionPage_Mobile.jpeg" alt="Section Page Mobile" width="400"/>
 
 ### Logo
 
-![The Clone York Times Logo](./public/screenshot/The_Clone_York_Times_Logo.png)
-![The New York Times Logo](./public/screenshot/The_New_York_Times_logo.png)
+<img src="./public/screenshot/The_Clone_York_Times_Logo.png" alt="The Clone York Times Logo" width="400"/>
+<img src="./public/screenshot/The_New_York_Times_logo.png" alt="The New York Times Logo" width="400"/>
 
-La home page con una lista di articoli aggiornati dinamicamente.
-
-Visualizzazione di un articolo completo, con immagini e testo formattato.
 
 ## Dipendenze
 Il progetto utilizza diverse librerie e strumenti chiave per il suo funzionamento:
