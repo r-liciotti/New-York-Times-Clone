@@ -79,27 +79,27 @@ Ecco una panoramica della struttura delle cartelle e dei file principali:
 Ecco alcune immagini del progetto:
 ### Homepage
 
-![Homepage](./path/to/HomePage.jpeg)
-![Homepage Mobile](./path/to/HomePage_Mobile.jpeg)
+![Homepage](./public/screenshot/HomePage.jpeg)
+![Homepage Mobile](./path/HomePage_Mobile.jpeg)
 
 ### Navbar
 
-![Navbar Mobile](./path/to/Navbar_Mobile.jpeg)
+![Navbar Mobile](./public/screenshot/Navbar_Mobile.jpeg)
 
 ### Search Page
 
-![Search Page](./path/to/SearchPage.jpeg)
-![Search Page Mobile](./path/to/SearchPage_Mobile.jpeg)
+![Search Page](./public/screenshot/SearchPage.jpeg)
+![Search Page Mobile](./public/screenshot/SearchPage_Mobile.jpeg)
 
 ### Section Page
 
-![Section Page](./path/to/SectionPage.jpeg)
-![Section Page Mobile](./path/to/SectionPage_Mobile.jpeg)
+![Section Page](./public/screenshot/SectionPage.jpeg)
+![Section Page Mobile](./public/screenshot/SectionPage_Mobile.jpeg)
 
 ### Logo
 
-![The Clone York Times Logo](./path/to/The_Clone_York_Times_Logo.png)
-![The New York Times Logo](./path/to/The_New_York_Times_logo.png)
+![The Clone York Times Logo](./public/screenshot/The_Clone_York_Times_Logo.png)
+![The New York Times Logo](./public/screenshot/The_New_York_Times_logo.png)
 
 La home page con una lista di articoli aggiornati dinamicamente.
 
