@@ -77,6 +77,29 @@ Ecco una panoramica della struttura delle cartelle e dei file principali:
 
 ## Screenshot
 Ecco alcune immagini del progetto:
+### Homepage
+
+![Homepage](./path/to/HomePage.jpeg)
+![Homepage Mobile](./path/to/HomePage_Mobile.jpeg)
+
+### Navbar
+
+![Navbar Mobile](./path/to/Navbar_Mobile.jpeg)
+
+### Search Page
+
+![Search Page](./path/to/SearchPage.jpeg)
+![Search Page Mobile](./path/to/SearchPage_Mobile.jpeg)
+
+### Section Page
+
+![Section Page](./path/to/SectionPage.jpeg)
+![Section Page Mobile](./path/to/SectionPage_Mobile.jpeg)
+
+### Logo
+
+![The Clone York Times Logo](./path/to/The_Clone_York_Times_Logo.png)
+![The New York Times Logo](./path/to/The_New_York_Times_logo.png)
 
 La home page con una lista di articoli aggiornati dinamicamente.
 
