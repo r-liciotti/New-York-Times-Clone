@@ -47,11 +47,7 @@ function HeaderBottom({ headerHeight }: HeaderBottomProp) {
             </Link>
           </div>
         ))}
-        {/* <DropdownSection
-          section={mainSection[0]}
-          handleonMouseLeave={onMouseLeave}
-          headerHeight={headerHeight}
-        /> */}
+
         {DropdownSectionState.isHovered && (
           <DropdownSection
             section={DropdownSectionState.section}

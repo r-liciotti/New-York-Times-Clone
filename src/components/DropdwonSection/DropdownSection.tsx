@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 
 interface DropdownSectionProps {
   section: SectionItem | null;
-  handleonMouseLeave?: MouseEventHandler<HTMLDivElement> | null;
-  handleOnClick?: MouseEventHandler<HTMLDivElement> | null;
+  handleonMouseLeave?: MouseEventHandler<HTMLDivElement>;
+  handleOnClick?: MouseEventHandler<HTMLDivElement>;
   headerHeight: number;
 }
 
@@ -18,6 +18,13 @@ const DropdownSection: React.FC<DropdownSectionProps> = ({
   headerHeight,
 }) => {
   if (section === null) return <></>;
+
+  // Evento per chiudere il Dropwdown quando viene cliccata una sezione
+  const toggleDropdownSection = (event: React.MouseEvent<HTMLDivElement>) => {
+    if (handleonMouseLeave) {
+      handleonMouseLeave(event); // Passa l'evento a handleonMouseLeave
+    }
+  };
 
   return (
     <>
@@ -30,7 +37,7 @@ const DropdownSection: React.FC<DropdownSectionProps> = ({
         <SeparatorOneLine className={style.separator} />
         <h3>Section</h3>
 
-        <div className={style.container}>
+        <div className={style.container} onClick={toggleDropdownSection}>
           {getSectionItemList(section.param).map((item, index) => (
             <Link to={`/section/${item.param}`} key={index}>
               <p>{item.label}</p>
