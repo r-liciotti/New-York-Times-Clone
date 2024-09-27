@@ -22,6 +22,8 @@ const GridArticlesBySection: React.FC<GridArticlesBySectionProps> = ({
   const sectionQuery = useQuery({
     queryKey: ["NewsTimesBySection", section], // Usa una chiave unica che include la sezione
     queryFn: () => getTimesNewswireBySection(section, "5"), // Passa la sezione al tuo query function
+    staleTime: 1000 * 60 * 5, // I dati rimangono freschi per 5 minuti
+    refetchOnWindowFocus: false, // Non ricaricare i dati quando la finestra si focalizza
   });
 
   // Gestisci gli stati di caricamento ed errore

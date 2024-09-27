@@ -16,7 +16,6 @@ const mainSection: SectionItem[] = [
 ];
 
 function getSectionLabelByParam(param: string): string | undefined {
-    console.log("param ", encodeString(param));
 
     return sections.find(section => section.param === encodeString(param))?.displayName;
 

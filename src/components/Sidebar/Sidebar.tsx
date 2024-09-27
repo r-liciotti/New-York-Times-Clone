@@ -11,11 +11,15 @@ function Sidebar() {
   const carouselUseQuery = useQuery({
     queryKey: ["timesNewswireBySection", randomSection],
     queryFn: () => getTimesNewswireBySection(randomSection, "15"),
+    staleTime: 1000 * 60 * 5, // I dati rimangono freschi per 5 minuti
+    refetchOnWindowFocus: false, // Non ricaricare i dati quando la finestra si focalizza
   });
 
   const opinionListUseQuery = useQuery({
     queryKey: ["getTopStoriesBySection", "opinion"],
     queryFn: () => getTopStoriesBySection("opinion"),
+    staleTime: 1000 * 60 * 5, // I dati rimangono freschi per 5 minuti
+    refetchOnWindowFocus: false,
   });
 
   return (
