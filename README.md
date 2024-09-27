@@ -1,6 +1,6 @@
 # The Clone York Times
 
-![Project Logo](./public/logo.png)
+![Project Logo](./public/The_Clone_York_Times_Logo.png)
 
 **The Clone York Times** è un clone del sito web del famoso giornale _The New York Times_, sviluppato come progetto di esame per il corso React offerto da **Start2Impact**. Il sito è stato realizzato con le tecnologie **React**, **Vite** e **TypeScript** per garantire un'esperienza utente moderna, rapida e scalabile.
 
@@ -27,6 +27,7 @@
 - [Utilizzo](#utilizzo)
 - [Struttura del Progetto](#struttura-del-progetto)
 - [Screenshot](#screenshot)
+- [Dipendenze](#dipendenze)
 - [Autore](#autore)
 - [Licenza](#licenza)
 
@@ -53,19 +54,17 @@ Il progetto **The Clone York Times** è pensato per replicare il layout e le fun
 
 Segui questi passaggi per configurare e avviare il progetto localmente:
 
-1. **Clona il repository:**
-   ```bash
-   git clone https://github.com/tuo-username/the-clone-york-times.git
-   cd the-clone-york-times
-   npm install
-   npm run dev
-   npm run build
-   
+    git clone https://github.com/tuo-username/the-clone-york-times.git
+    cd the-clone-york-times
+    npm install
+    npm run dev
+    npm run build
 
-### Utilizzo
+
+## Utilizzo
 Una volta avviato il server di sviluppo, visita http://localhost:3000 nel tuo browser per vedere il sito funzionante. Puoi navigare attraverso le diverse sezioni come Home, Articoli e altre pagine informative. Il sito permette la consultazione di notizie dinamiche caricate da un'API simulata (o reale, se fornita).
 
-### Struttura del Progetto
+## Struttura del Progetto
 Ecco una panoramica della struttura delle cartelle e dei file principali:
 
     src/components/: Componenti riutilizzabili come Header, Footer, ArticleCard.
@@ -76,32 +75,32 @@ Ecco una panoramica della struttura delle cartelle e dei file principali:
     vite.config.ts: Configurazione di Vite per il build system.
 
 
-### Screenshot
+## Screenshot
 Ecco alcune immagini del progetto:
 
 La home page con una lista di articoli aggiornati dinamicamente.
 
 Visualizzazione di un articolo completo, con immagini e testo formattato.
 
-Dipendenze
+## Dipendenze
 Il progetto utilizza diverse librerie e strumenti chiave per il suo funzionamento:
 
-Dipendenze di Produzione:
-React: ^18.3.1
-Redux Toolkit: ^2.2.7
-React Query: ^5.53.2
-React Router DOM: ^6.26.1
-Axios: ^1.7.7
-React Slick & Slick Carousel: ^0.30.2 / ^1.8.1 (per slider/carousel)
-Dipendenze di Sviluppo:
-Vite: ^5.4.1
-TypeScript: ^5.5.3
-ESLint: ^9.9.0
-Typed CSS Modules: ^0.9.1
+- Dipendenze di Produzione:
+- React: ^18.3.1
+- Redux Toolkit: ^2.2.7
+- React Query: ^5.53.2
+- React Router DOM: ^6.26.1
+- Axios: ^1.7.7
+- React Slick & Slick Carousel: ^0.30.2 / ^1.8.1 (per slider/carousel)
+- Dipendenze di Sviluppo:
+- Vite: ^5.4.1
+- TypeScript: ^5.5.3
+- ESLint: ^9.9.0
+- Typed CSS Modules: ^0.9.1
 
-### Autore
-[Riccardo Liciotti] – Sviluppatore principale
+## Autore
+***Riccardo Liciotti*** – Sviluppatore principale
 Ringrazio Start2Impact per l'opportunità di apprendimento e supporto.
 
-### Licenza
+## Licenza
 Questo progetto è distribuito sotto la licenza MIT. Vedi il file LICENSE per maggiori dettagli.
