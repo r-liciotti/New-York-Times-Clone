@@ -98,11 +98,6 @@ Ecco alcune immagini del progetto:
 <img src="./public/screenshot/SectionPage.jpeg" alt="Section Page" width="400"/>
 <img src="./public/screenshot/SectionPage_Mobile.jpeg" alt="Section Page Mobile" width="200"/>
 
-### Logo
-
-<img src="./public/screenshot/The_Clone_York_Times_Logo.png" alt="The Clone York Times Logo" width="400"/>
-<img src="./public/screenshot/The_New_York_Times_logo.png" alt="The New York Times Logo" width="200"/>
-
 
 ## Dipendenze
 Il progetto utilizza diverse librerie e strumenti chiave per il suo funzionamento:
